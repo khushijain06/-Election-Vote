@@ -6,8 +6,8 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
     proxy: {
-      "/candidate": "http://localhost:5000",
-      "/user": "http://localhost:5000",
+      "/candidate": "https://election-vote-1.onrender.com",
+      "/user": "https://election-vote-1.onrender.com",
     },
   },
 });

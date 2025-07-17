@@ -18,8 +18,8 @@ const AddCandidate = () => {
     e.preventDefault();
     try {
       const token = localStorage.getItem("token");
-      console.log(token)
-      const res = await axios.post(
+      console.log(token);
+      await axios.post(
         "/candidate", // your backend endpoint
         candidate,
         {
